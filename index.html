@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Om Karadkar's Portfolio">
+    <title>Om Karadkar - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">Om Karadkar</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="text-container">
+            <h1>Om Karadkar</h1>
+            <p>I’m Om Karadkar, a passionate software developer with a strong foundation in programming languages like C, C++, Java, and Python. My work spans a variety of projects, from creating efficient data structures to developing innovative applications in the realms of IoT and machine learning.</p>
+            <p><br>I specialize in building robust software solutions, including a virtual file system, a secure file packing and unpacking tool, and a comprehensive job recommendation system. My technical skills are complemented by a keen analytical mindset and problem-solving abilities, enabling me to tackle complex challenges and deliver results.</p>
+            <p><br>Explore my projects, delve into my research on IoT safety devices, and see how I can contribute to your next big idea.</p>
+        </div>
+        <div class="photo-container">
+            <img src="images/my_photo.jpeg" alt="Your Photo" class="profile-photo">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section text-white">
+        <h2>About Me</h2>
+        <p>I am Om Santosh Karadkar, currently pursuing my BTech in Computer Engineering at Vishwakarma Institute of Information Technology, Pune. With a strong interest in application development, I have gained experience in C, C++, Java, and Python, along with a solid foundation in algorithm design and operating system internals.</p>
+        <p>I strive to improve my skills continuously and contribute to meaningful projects that enhance technology's impact on daily life.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section text-white">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>Customized Virtual File System</h3>
+            <p>Replicated Linux file system functionality with a customized shell and data structures like Incore Inode Table and File Table.</p>
+        </div>
+        <div class="project">
+            <h3>File Packer/Unpacker with Encryption</h3>
+            <p>Packed multiple files into one with metadata and unpacked them with encryption/decryption. Includes a GUI for user interaction.</p>
+        </div>
+        <div class="project">
+            <h3>Generalized Data Structures Library</h3>
+            <p>Library with generic implementations of various data structures supporting both linear and non-linear types.</p>
+        </div>
+        <div class="project">
+            <h3>Chat Messenger</h3>
+            <p>A peer-to-peer chat application using Java sockets with a logging feature, platform, and architecture-independent.</p>
+        </div>
+        <p>View more on my <a href="https://github.com/Om-Santosh-Karadkar?tab=repositories">GitHub</a>.</p>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume-section text-white">
+        <h2>Resume</h2>
+        <a href="Om_Karadkar_Resume.pdf" download="Om_Karadkar_Resume.pdf" class="btn">Download My Resume</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section text-white">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/{your-form-id}" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Om Karadkar | All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
