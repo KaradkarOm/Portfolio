@@ -15,7 +15,9 @@
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
             <li><a href="#resume">Resume</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -30,7 +32,7 @@
             <p><br>Explore my projects, delve into my research on IoT safety devices, and see how I can contribute to your next big idea.</p>
         </div>
         <div class="photo-container">
-            <img src="my_photo.jpeg" alt="Your Photo" class="profile-photo">
+            <img src="images/my_photo2.jpeg" alt="Your Photo" class="profile-photo">
         </div>
     </section>
 
@@ -40,6 +42,57 @@
         <p>I am Om Santosh Karadkar, currently pursuing my BTech in Computer Engineering at Vishwakarma Institute of Information Technology, Pune. With a strong interest in application development, I have gained experience in C, C++, Java, and Python, along with a solid foundation in algorithm design and operating system internals.</p>
         <p>I strive to improve my skills continuously and contribute to meaningful projects that enhance technology's impact on daily life.</p>
     </section>
+
+    <!-- Education Section -->
+<section id="education" class="education-section text-white">
+    <h2>Education</h2>
+    <div class="education-item">
+        <h3>BTech, Computer Engineering</h3>
+        <p>Vishwakarma Institute of Information Technology, Kondhwa, Pune</p>
+        <p>2022 - 2026</p>
+        <p>CGPA: 8.5 (Latest)</p>
+        <p>First Class with Distinction</p>
+    </div>
+    <br><br>
+    <div class="education-item">
+        <h3>12th HSC</h3>
+        <p>Arihant Education Foundations Arts, Science & Commerce College, Pune</p>
+        <p>July 2020 - March 2022</p>
+        <p>Percentage: 85%</p>
+        <p>First Class with Distinction</p>
+    </div>
+    <br><br>
+    <div class="education-item">
+        <h3>10th CBSE</h3>
+        <p>Sarhad School, Katraj, Pune</p>
+        <p>April 2019 - May 2020</p>
+        <p>Percentage: 91.6%</p>
+        <p>First Class with Distinction</p>
+    </div>
+</section>
+
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section text-white">
+    <h2>Technical Skills</h2>
+    <ul>
+        <li><strong>Procedural Language:</strong> C programming</li>
+        <li><strong>Object Oriented Programming:</strong> C++ programming, Java programming, Python</li>
+        <li><strong>Virtual Machine Based Programming:</strong> Java programming</li>
+        <li><strong>Web Technologies:</strong> HTML/HTML5, JavaScript</li>
+        <li><strong>IDE and Tools:</strong> Visual Studios, IntelliJ</li>
+        <li><strong>Version Control:</strong> Git</li>
+        <li><strong>Database:</strong> PL/SQL (Oracle), MySQL</li>
+    </ul>
+    <br><br>
+    <h2>Soft Skills</h2>
+    <ul>
+        <li>Problem-solving</li>
+        <li>Team Collaboration</li>
+        <li>Communication Skills</li>
+        <li>Time Management</li>
+    </ul>
+</section>
 
     <!-- Projects Section -->
     <section id="projects" class="projects-section text-white">
@@ -72,13 +125,43 @@
     <!-- Contact Section -->
     <section id="contact" class="contact-section text-white">
         <h2>Contact Me</h2>
-        <form action="https://formspree.io/f/{your-form-id}" method="POST">
+        <div class="contact-info">
+            <p>Email: <a href="mailto:om.22210454@viit.ac.in" class="contact-link">Email</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/om-karadkar" class="contact-link" target="_blank">LinkedIn</a></p>
+            <p>GitHub: <a href="https://github.com/Om-Santosh-Karadkar" class="contact-link" target="_blank">GitHub</a></p>
+
+        </div>
+
+        <h3>Send me a message:</h3>
+        <form name="submit-to-google-sheet">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="message" placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
     </section>
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxxVJjwLL6Rq6gowcAbtav1X7dZtK1etYsqZyN3FXV6xWgX_8ln0YyC8to6vIC3-ePi/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.createElement('p');
+        form.appendChild(msg);  // Append a message element for feedback
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault();
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+              msg.innerText = 'Success! Your message has been sent.';
+              msg.style.color = 'green';  // Success message style
+              form.reset();  // Clear form after submission
+            })
+            .catch(error => {
+              msg.innerText = 'Error! Please try again.';
+              msg.style.color = 'red';  // Error message style
+            });
+        })
+    </script>
 
     <!-- Footer -->
     <footer>

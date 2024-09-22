@@ -7,7 +7,7 @@
 
 body {
     line-height: 1.6;
-    background-color: rgb(52, 52, 52);
+    background-color: black; /* Changed to complete black */
 }
 
 nav {
@@ -37,35 +37,35 @@ nav ul li a {
 }
 
 .home-section {
-    background: url('images/background.avif') no-repeat center center/cover;
+    background-color: black; /* Set the home section background to black */
     height: 100vh;
     display: flex;
-    justify-content: space-between; /* Space between text and image */
-    align-items: center; /* Align items vertically centered */
+    justify-content: space-between;
+    align-items: center;
     padding: 0 2em;
     color: #fff;
 }
 
 .text-container {
-    max-width: 50%; /* Adjust as needed */
+    max-width: 50%;
 }
 
 .photo-container {
-    position: absolute; /* Use absolute positioning */
-    right: 150px; /* Move photo from the right */
-    bottom: 65px; /* Position it from the bottom */
+    position: absolute;
+    right: 150px;
+    bottom: 65px;
 }
 
 .profile-photo {
-    width: 550px; /* Adjust size as needed */
-    height: 550px; /* Make height equal to width for a perfect circle */
-    object-fit: cover; /* Ensures the image covers the area without stretching */
+    width: 550px;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .text-white {
-    color: white; /* Change text color to white */
+    color: white;
 }
-
 
 .home-section h1 {
     font-size: 3em;
@@ -82,12 +82,13 @@ nav ul li a {
     margin-top: 1em;
 }
 
-.about-section, .projects-section, .resume-section, .contact-section {
+.about-section, .projects-section, .resume-section, .contact-section, .skills-section, .education-section {
+    background-color: black; /* Set background to black for all sections */
     padding: 5em 2em;
     text-align: center;
 }
 
-.about-section h2, .projects-section h2, .resume-section h2, .contact-section h2 {
+.about-section h2, .projects-section h2, .resume-section h2, .contact-section h2, .skills-section h2, .education-section h2 {
     margin-bottom: 1em;
     font-size: 2em;
 }
@@ -115,4 +116,9 @@ footer {
     color: #fff;
     padding: 1em;
     text-align: center;
+}
+
+ul {
+    list-style: none; /* This removes the bullets */
+    padding-left: 0; /* Removes any default indentation */
 }
