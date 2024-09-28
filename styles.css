@@ -216,7 +216,7 @@ nav ul li a.active {
 
 .profile-photo {
     width: 360px;
-    height: 680px;
+    height: 650px;
     object-fit: cover;
     animation: fadeInRight 2s ease-in-out;
     transition: transform 0.3s ease-in-out;
